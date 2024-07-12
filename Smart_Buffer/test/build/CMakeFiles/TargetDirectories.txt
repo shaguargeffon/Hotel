@@ -1,0 +1,3 @@
+/home/shaguar/project/course/Hotel/Smart_Buffer/test/build/CMakeFiles/rebuild_cache.dir
+/home/shaguar/project/course/Hotel/Smart_Buffer/test/build/CMakeFiles/edit_cache.dir
+/home/shaguar/project/course/Hotel/Smart_Buffer/test/build/CMakeFiles/runTests.dir

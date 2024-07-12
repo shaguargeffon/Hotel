@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Smart_Buffer/inc/SmartBuffer.hpp
+string
+-
+list
+-
+tuple
+-
+iostream
+-
+
+/home/shaguar/project/course/Hotel/Smart_Buffer/src/SmartBuffer.cpp
+SmartBuffer.hpp
+/home/shaguar/project/course/Hotel/Smart_Buffer/src/SmartBuffer.hpp
+

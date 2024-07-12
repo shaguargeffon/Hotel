@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsmartbuffer_lib.a  CMakeFiles/smartbuffer_lib.dir/src/SmartBuffer.cpp.o
+/usr/bin/ranlib libsmartbuffer_lib.a
