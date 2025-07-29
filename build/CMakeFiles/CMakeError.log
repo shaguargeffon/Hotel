@@ -1,59 +1,42 @@
-Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/shaguar/project/course/Hotel/build/CMakeFiles/CMakeTmp
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/han/project/course/Hotel/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_15f02/fast"
-make: Warning: File 'Makefile' has modification time 0,066 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_15f02.dir/build.make CMakeFiles/cmTC_15f02.dir/build
-make[1]: Entering directory '/home/shaguar/project/course/Hotel/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_15f02.dir/flags.make' has modification time 0,063 s in the future
-Building C object CMakeFiles/cmTC_15f02.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_15f02.dir/CheckSymbolExists.c.o   -c /home/shaguar/project/course/Hotel/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_15f02
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15f02.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_15f02.dir/CheckSymbolExists.c.o  -o cmTC_15f02 
-CMakeFiles/cmTC_15f02.dir/CheckSymbolExists.c.o: In function `main':
-CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+Run Build Command(s):/usr/bin/make cmTC_08f69/fast && make: Warning: File 'Makefile' has modification time 0,86 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_08f69.dir/build.make CMakeFiles/cmTC_08f69.dir/build
+make[1]: Entering directory '/home/han/project/course/Hotel/build/CMakeFiles/CMakeTmp'
+make[1]: Warning: File 'CMakeFiles/cmTC_08f69.dir/flags.make' has modification time 0,85 s in the future
+Building C object CMakeFiles/cmTC_08f69.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_08f69.dir/src.c.o   -c /home/han/project/course/Hotel/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_08f69
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08f69.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_08f69.dir/src.c.o  -o cmTC_08f69 
+/usr/bin/ld: CMakeFiles/cmTC_08f69.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_15f02.dir/build.make:97: recipe for target 'cmTC_15f02' failed
-make[1]: *** [cmTC_15f02] Error 1
-make[1]: Leaving directory '/home/shaguar/project/course/Hotel/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_15f02/fast' failed
-make: *** [cmTC_15f02/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_08f69.dir/build.make:87: cmTC_08f69] Error 1
+make[1]: Leaving directory '/home/han/project/course/Hotel/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_08f69/fast] Error 2
 
-File /home/shaguar/project/course/Hotel/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
+
+Source file was:
 #include <pthread.h>
 
-int main(int argc, char** argv)
+void* test_func(void* data)
 {
-  (void)argv;
-#ifndef pthread_create
-  return ((int*)(&pthread_create))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
+  return data;
 }
 
-Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/shaguar/project/course/Hotel/build/CMakeFiles/CMakeTmp
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
 
-Run Build Command:"/usr/bin/make" "cmTC_957dd/fast"
-make: Warning: File 'Makefile' has modification time 0,064 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_957dd.dir/build.make CMakeFiles/cmTC_957dd.dir/build
-make[1]: Entering directory '/home/shaguar/project/course/Hotel/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_957dd.dir/flags.make' has modification time 0,059 s in the future
-Building C object CMakeFiles/cmTC_957dd.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_957dd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_957dd
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_957dd.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_957dd.dir/CheckFunctionExists.c.o  -o cmTC_957dd -lpthreads 
-/usr/bin/ld: cannot find -lpthreads
-collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_957dd.dir/build.make:97: recipe for target 'cmTC_957dd' failed
-make[1]: *** [cmTC_957dd] Error 1
-make[1]: Leaving directory '/home/shaguar/project/course/Hotel/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_957dd/fast' failed
-make: *** [cmTC_957dd/fast] Error 2
-
+  return 0;
+}
 

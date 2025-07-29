@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shaguar/project/course/Hotel/Smart_Buffer/src/SmartBuffer.cpp" "/home/shaguar/project/course/Hotel/build/Smart_Buffer/CMakeFiles/smartbuffer_lib.dir/src/SmartBuffer.cpp.o"
+  "/home/han/project/course/Hotel/Smart_Buffer/src/SmartBuffer.cpp" "/home/han/project/course/Hotel/build/Smart_Buffer/CMakeFiles/smartbuffer_lib.dir/src/SmartBuffer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -12,7 +12,10 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Smart_Buffer/inc"
   "../Smart_Buffer"
+  "../Com"
   "../Smart_Buffer/src"
+  "../Smart_Buffer/test"
+  "/include"
   )
 
 # Targets to which this target links.

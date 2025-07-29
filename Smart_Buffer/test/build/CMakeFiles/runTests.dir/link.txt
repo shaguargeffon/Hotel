@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/runTests.dir/SmartBufferTest.cpp.o CMakeFiles/runTests.dir/home/shaguar/project/course/Hotel/Smart_Buffer/src/SmartBuffer.cpp.o  -o runTests -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

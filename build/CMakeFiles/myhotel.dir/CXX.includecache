@@ -6,6 +6,30 @@
 
 #IncludeRegexTransform: 
 
+../Com/com.hpp
+stdio.h
+-
+ctype.h
+-
+unistd.h
+-
+sys/types.h
+-
+arpa/inet.h
+-
+sys/socket.h
+-
+stdlib.h
+-
+iostream
+-
+string
+-
+cstring
+-
+vector
+-
+
 ../Smart_Buffer/inc/SmartBuffer.hpp
 string
 -
@@ -16,7 +40,15 @@ tuple
 iostream
 -
 
-/home/shaguar/project/course/Hotel/main.cpp
+/home/han/project/course/Hotel/main.cpp
 SmartBuffer.hpp
-/home/shaguar/project/course/Hotel/SmartBuffer.hpp
+/home/han/project/course/Hotel/SmartBuffer.hpp
+thread
+-
+com.hpp
+/home/han/project/course/Hotel/com.hpp
+mutex
+-
+vector
+-
 

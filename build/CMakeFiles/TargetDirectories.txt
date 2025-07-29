@@ -1,6 +1,9 @@
-/home/shaguar/project/course/Hotel/build/CMakeFiles/rebuild_cache.dir
-/home/shaguar/project/course/Hotel/build/CMakeFiles/edit_cache.dir
-/home/shaguar/project/course/Hotel/build/CMakeFiles/myhotel.dir
-/home/shaguar/project/course/Hotel/build/Smart_Buffer/CMakeFiles/rebuild_cache.dir
-/home/shaguar/project/course/Hotel/build/Smart_Buffer/CMakeFiles/edit_cache.dir
-/home/shaguar/project/course/Hotel/build/Smart_Buffer/CMakeFiles/smartbuffer_lib.dir
+/home/han/project/course/Hotel/build/CMakeFiles/rebuild_cache.dir
+/home/han/project/course/Hotel/build/CMakeFiles/edit_cache.dir
+/home/han/project/course/Hotel/build/CMakeFiles/myhotel.dir
+/home/han/project/course/Hotel/build/Smart_Buffer/CMakeFiles/rebuild_cache.dir
+/home/han/project/course/Hotel/build/Smart_Buffer/CMakeFiles/edit_cache.dir
+/home/han/project/course/Hotel/build/Smart_Buffer/CMakeFiles/smartbuffer_lib.dir
+/home/han/project/course/Hotel/build/Com/CMakeFiles/rebuild_cache.dir
+/home/han/project/course/Hotel/build/Com/CMakeFiles/edit_cache.dir
+/home/han/project/course/Hotel/build/Com/CMakeFiles/com_lib.dir

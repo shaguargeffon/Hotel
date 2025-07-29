@@ -1,4 +1,4 @@
-# Install script for directory: /home/shaguar/project/course/Hotel/Smart_Buffer
+# Install script for directory: /home/han/project/course/Hotel/Smart_Buffer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

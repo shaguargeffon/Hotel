@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/myhotel.dir/main.cpp.o  -o myhotel Smart_Buffer/libsmartbuffer_lib.a 
+/usr/bin/c++    -rdynamic CMakeFiles/myhotel.dir/main.cpp.o  -o myhotel  Com/libcom_lib.a Smart_Buffer/libsmartbuffer_lib.a -pthread 
