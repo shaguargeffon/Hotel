@@ -1,0 +1,1 @@
+import socketimport times = socket.socket()host = socket.gethostname()print(host)port = 8888s.bind((host, port))s.listen(5)c, addr = s.accept()print("Got connection", addr)while True:    c.send(b'Meeting is at 10am')    time.sleep(3)    #c.close()
